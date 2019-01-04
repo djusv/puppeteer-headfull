@@ -1,0 +1,8 @@
+version: '3'
+services:
+    dock-puppeteer:
+      build: .
+      shm_size: 1g
+      volumes:
+        - ./:/app
+        - ./output:/app/output
